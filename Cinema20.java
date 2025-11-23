@@ -9,12 +9,21 @@ public class Cinema20 {
         audience[2][0] = "Eka";
         audience[2][1] = "Farhan";
         audience[3][0] = "Gisel";
+        audience[3][1] = "Hana";
 
         System.out.printf("%s \t %s\n", audience[0][0], audience[0][1]);
         System.out.printf("%s \t %s\n", audience[1][0], audience[1][1]);
         System.out.printf("%s \t %s\n", audience[2][0], audience[2][1]);
         System.out.printf("%s \t %s\n", audience[3][0], audience[3][1]);
 
+        for (String[] rowAudience : audience) {
+        System.out.println("\nLength of row: " + rowAudience.length);
+        }
 
+        System.out.println("\nAudiences in the row 3: ");
+        for (String i : audience[2]) {
+            System.out.println(i);
+        }
     }
 }
+ 

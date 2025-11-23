@@ -20,10 +20,8 @@ public class Cinema20 {
         System.out.println("\nLength of row: " + rowAudience.length);
         }
 
-        System.out.println("\nAudiences in the row 3: ");
-        for (String i : audience[2]) {
-            System.out.println(i);
+        for (int i = 0; i < audience.length; i++) {
+            System.out.println("Audience in the row: " + (i +1) + String.join(", ", audience[i]));
+        }
         }
     }
-}
- 
